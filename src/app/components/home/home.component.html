@@ -1,0 +1,415 @@
+<div class="home">
+
+    <header (scroll)="onWindowScroll()" >
+
+        <img src="../../../assets/img/casabreizh_logo.png" alt="Logo du restaurant Casabreizh">
+        
+        <div class="header-right">
+            <nav>
+                <ul>
+                    <li><a href="#accueil" class="active-link" (click)="setActiveClass(1)">Accueil</a></li>
+                    <li><a href="#a-propos" (click)="setActiveClass(2)">A Propos</a></li>
+                    <li><a href="#commandez" (click)="setActiveClass(3)">Commandez</a></li>
+                    <li><a href="#carte" (click)="setActiveClass(4)">La Carte</a></li>
+                    <li><a href="#temoignages" (click)="setActiveClass(5)">Témoignages</a></li>
+                    <li><a href="#contact" (click)="setActiveClass(6)">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    
+    </header>
+
+    <div class="slider" id="accueil">
+
+        <div class="mySlide fadeHeader">
+            <div class="slider-text">
+                <h1>Des Plats Exotiques</h1>
+                <p>Venez découvrir des plats typiques du Sénégal comme</p>
+                <p>le poisson Capitaine ou Baracouda grillé, le Soupoukandja (boeuf sauce gombo), le Mafé (boeuf sauce arachide), le Tiéboudjène, riz au poisson  plat national du Sénégal</p>
+                
+                <a href="#menus">La Carte</a>
+            </div>
+            <img src="../../../assets/img/casa-slide-one.jpeg" alt="family at airport">
+        </div>
+
+        <div class="mySlide fadeHeader">
+            <div class="slider-text">
+                <h1>Un Accueil Chaleureux</h1>
+                <p>Le Casa Breizh vous réserve un accueil des plus convivial dans un cadre agréable et dépaysant. Du mardi au samedi, le matin comme le soir</p>
+                <a href="#menus">La Carte</a>
+             </div>
+            <img src="../../../assets/img/casa-slide-two.jpeg" alt="family at airport">
+        </div>
+
+        <div class="mySlide fadeHeader">
+            <div class="slider-text">
+                <h1>Une Cuisine Originale</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#menus">La Carte</a>
+            </div>
+            <img src="../../../assets/img/casa-slide-four.jpeg" alt="family at airport">
+        </div>
+
+
+        <span class="prev" (click)="clickOnArrow(-1)"><fa-icon [icon]="faChevronLeft"></fa-icon></span>
+        <span class="next" (click)="clickOnArrow(1)"><fa-icon [icon]="faChevronRight"></fa-icon></span>
+
+        <div class="dots">
+            <span class="dot" (click)="currentSlide(1)"></span>
+            <span class="dot" (click)="currentSlide(2)"></span>
+            <span class="dot" (click)="currentSlide(3)"></span>
+        </div>
+    </div>
+
+    <div id="a-propos" class="about">
+
+        <div class="about-title">
+            <img src="../../../assets/img/deco/left-green.png" alt="Décoration de titre gauche">
+            <span>A PROPOS</span>
+            <img src="../../../assets/img/deco/right-green.png" alt="Décoration de titre droit">
+        </div>
+
+        <div class="about-content">
+
+            <div class="about-content-text">
+                <h3>Notre Histoire</h3>
+                <span>Cuisine d'ici et d'ailleurs</span>
+                <span>
+                    <strong>Casa</strong>, c’est un clein d’oeil de ma région d’origine: la
+                    Casamance au Sénégal.
+                </span>
+                <span>
+                    <strong>Breizh</strong> se rapporte à la cuisine
+                    d’ici, en Bretagne.
+                </span>
+                <span>
+                    Dans une ambiance chaleureuse et conviviale, je vous 
+                    emmènerai pour un voyage cullinaire en vous faisant 
+                    découvrir ma cuisine africaine avec des plats parfumés
+                    et relevés. Si vous préferez rester sur des saveurs familières, je vous
+                    proposerais un large choix de plats traditionnels : magret 
+                    de canard, entrecôte, grande salade, tartine …
+                </span>
+                <span>
+                    Un week-end par mois le chef organise des voyages 
+                    culinaires vers d’autres horizons.
+                </span>
+                <span>
+                    Dépaysement garanti !!!
+                </span>
+                
+            </div>
+           
+            <div class="about-content-media">
+                <img src="../../../assets/img/casa-about.png" alt="image du chef Atho">
+                <span></span>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="commandez" class="a-emporter">
+        <img class="commandez-background" src="../../../assets/img/casa-slide-three.jpeg"> 
+    
+        <div class="commandez-title">
+            <img src="../../../assets/img/deco/left-gold.png" alt="Décoration de titre gauche">
+            <span>COMMANDEZ MAINTENANT</span>
+            <img src="../../../assets/img/deco/right-gold.png" alt="Décoration de titre droit">
+        </div>
+        
+        <img class="livreur" src="../../../assets/img/casa-deliver-driver.png" alt="illustration d'un livreur de nourriture">
+        <span>Pour vos livraisons à domicile retrouvez-nous sur</span>
+        <div class="commandez-content">
+            <div class="commandez-content-apps">
+
+                <img src="../../../assets/img/casa-uber-eat.png" alt="Retrouvez Casabreizh sur uber eat">
+                <img src="../../../assets/img/casa-just-eat.png" alt="Retrouvez Casabreizh sur just eat">
+              
+            </div>
+        </div>
+    </div>
+
+    <div id="carte" class="carte">
+
+        <div class="carte-title">
+            <img src="../../../assets/img/deco/left-red.png" alt="Décoration de titre gauche">
+            <span>LA CARTE</span>
+            <img src="../../../assets/img/deco/right-red.png" alt="Décoration de titre droit">
+        </div>
+
+        <div class="carte-tabs">
+
+            <div class="tabs-menu">
+                <span (click)="chooseTab(1)" class="tab-menu active-tab-menu">Formules</span>
+                <span (click)="chooseTab(2)" class="tab-menu">Plats</span>
+                <span (click)="chooseTab(3)" class="tab-menu">Boissons</span>
+                <span (click)="chooseTab(4)" class="tab-menu">Desserts</span>
+            </div>
+
+            <div class="tabs-pages">
+
+
+<!-- formules bloc start -->
+
+                <div class="tabs-pages-conteneur">
+                    <div class="tab-page  active-tab-page">
+                        <img class="cart-image" src="../../../assets/img/casa-carte.png" alt="la carte du restaurant Casabreizh">
+                    </div>
+
+<!-- formules bloc end -->
+
+
+
+<!-- plats bloc start -->
+
+                    <div class="tab-page plat">
+                        <span class="title">Poissons</span>
+                        <div class="produit-bloc">
+                            <div class="produit" *ngFor="let poisson of poissonsArray">
+                                <div class="produit-bloc-image-text">
+                                    <img class="produit-image" src="{{poisson.imageProduit}}">
+                                    <span class="produit-text" *ngIf="poisson.etatProduit == false">Épuisé</span>
+                                </div>
+                                <div class="produit-info">
+                                    <span class="produit-info-title">{{poisson.nomProduit}}</span>
+                                    <span class="produit-info-description">{{poisson.descriptionProduit}}</span>
+                                    
+                                    <span class="produit-info-price">{{poisson.prixProduit}}</span>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <span class="title">Viandes</span>
+                        <div class="produit-bloc">
+                            <div class="produit" *ngFor="let dessert of dessertsArray">
+                                <div class="produit-bloc-image-text">
+                                    <img class="produit-image" src="{{dessert.imageProduit}}">
+                                    <span class="produit-text" *ngIf="dessert.etatProduit == false">Épuisé</span>
+                                </div>                                <div class="produit-info">
+                                    <span class="produit-info-title">{{dessert.nomProduit}}</span>
+                                    <span class="produit-info-description">{{dessert.descriptionProduit}}</span>
+                                    <span class="produit-info-price">{{dessert.prixProduit}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+<!-- Plats bloc end -->
+
+
+
+<!-- Boissons bloc start -->
+
+                    <div class="tab-page plat">
+
+                        <span class="title">Boissons non alcolisées</span>
+                        <div class="produit-bloc">
+                            <div class="produit" *ngFor="let poisson of poissonsArray">
+                                <div class="produit-bloc-image-text">
+                                    <img class="produit-image" src="{{poisson.imageProduit}}">
+                                    <span class="produit-text" *ngIf="poisson.etatProduit == false">Épuisé</span>
+                                </div> 
+                                
+                                <div class="produit-info">
+                                    <span class="produit-info-title">{{poisson.nomProduit}}</span>
+                                    <span class="produit-info-description">{{poisson.descriptionProduit}}</span>
+                                    <span class="produit-info-price">{{poisson.prixProduit}}</span>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <span class="title">Boissons alcolisées</span>
+                        <div class="produit-bloc">
+                            <div class="produit" *ngFor="let dessert of dessertsArray">
+                                    <div class="produit-bloc-image-text">
+                                        <img class="produit-image" src="{{dessert.imageProduit}}">
+                                        <span class="produit-text" *ngIf="dessert.etatProduit == false">Épuisé</span>
+                                    </div> 
+                                    
+                                    <div class="produit-info">
+                                        <span class="produit-info-title">{{dessert.nomProduit}}</span>
+                                        <span class="produit-info-description">{{dessert.descriptionProduit}}</span>
+                                        <span class="produit-info-price">{{dessert.prixProduit}}</span>
+                                        
+                                    </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+
+<!-- Boissons bloc end -->
+
+
+
+<!-- dessert bloc start -->
+
+                    <div class="tab-page dessert" >
+                        <div class="produit-bloc plat">
+                            <span class="title">Nos Desserts</span>
+                            <div class="produit" *ngFor="let dessert of dessertsArray">
+                                <div class="produit-bloc-image-text">
+                                    <img class="produit-image" src="{{dessert.imageProduit}}">
+                                    <span class="produit-text" *ngIf="dessert.etatProduit == false">Épuisé</span>
+                                </div> 
+                    
+                                <div class="produit-info">
+                                    <span class="produit-info-title">{{dessert.nomProduit}}</span>
+                                    <span class="produit-info-description">{{dessert.descriptionProduit}}</span>
+                                    <span class="produit-info-price">{{dessert.prixProduit}}</span>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+<!-- dessert bloc end -->
+
+
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+
+
+
+<!-- témoignages bloc start -->
+
+<div class="testinony-bloc">
+
+
+    <div class="testimony-title">
+        <img src="../../../assets/img/deco/left-white.png" alt="Décoration de titre gauche">
+        <span>TEMOIGNAGES</span>
+        <img src="../../../assets/img/deco/right-white.png" alt="Décoration de titre droit">
+    </div>
+
+
+    
+
+    <div class="testimony-caroussel">
+
+        <div class="testimony-caroussel-hidder">
+
+            <div class="testimony-caroussel-container">
+
+                <div class="testimony-element" *ngFor="let testimony of testimoniesArray" >
+            
+                    <span class="testimony-element-title"> {{testimony.nom}} </span>
+
+                    <div class="testimony-element-message">
+                                
+                        <span class="testimony-element-text-first-child"> {{testimony.message}} </span>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <span class="testimony-prev" (click)="testimonyClickPrev()">&#10094;</span>
+            <span class="testimony-next" (click)="testimonyClickNext()">&#10095;</span>
+
+        </div>
+    </div>
+        
+    <span class="testimony-call-to-action">Laissez nous un commentaire</span>
+
+</div>
+
+<!-- témoignages bloc end -->
+
+
+<!-- contact bloc start -->
+
+<div class="contact-bloc">
+    <img class="contact-bg" src="../../../assets/img/contact-bg.png">
+
+    <div class="contact-header">
+        <img src="../../../assets/img/deco/left-gold.png" alt="Décoration de titre gauche">
+        <span>CONTACTEZ-NOUS</span>
+        <img src="../../../assets/img/deco/right-gold.png" alt="Décoration de titre droit">
+    </div>
+
+    <div class="contact-bloc-info-form">
+        <div class="contact-info">
+            <div class="emplacement">
+                <span><fa-icon [icon]="faMapMarkerAlt"></fa-icon></span>
+                <span >Emplacement</span>
+                <span>165 rue de Fougère</span>
+                <span>35700, Rennes</span>
+            </div>
+
+            <div class="horaire">
+                <span><fa-icon [icon]="faCalendarAlt"></fa-icon></span>
+                <span >Nos Horaires</span>
+                <span>Mardi à Samedi</span>
+                <span>12h00-15h00 et 19h30-22h30</span>
+            </div>
+
+            <div class="phone-mail">
+                <span><fa-icon [icon]="faPhone"></fa-icon> / <fa-icon [icon]="faEnvelope"></fa-icon></span>
+                <span >Nous Contacter</span>
+                <span>(+33) 02 99 38 45 08 </span>
+                <span>contact@casabreizh.fr</span>
+            </div>
+        </div>
+        <form>
+            <div class="name-email">
+                <div class="name-bloc">
+                    <input id="name-input" type="text" placeholder="Nom">
+                    <label class="label-id"for="name">Nom</label>
+                </div>
+                <div class="email-bloc">
+                    <input id="email-input" type="text" placeholder="Email">
+                    <label class="label-id" for="email">Email</label>
+                </div>
+            </div>
+
+            <div class="objet-bloc">
+                <input id="objet-input" type="text" placeholder="Objet">
+                <label class="label-id" for="objet-input">Objet</label>
+            </div>
+
+            <div class="message-bloc">
+                <textarea id="message-area" type="text" placeholder="Message"></textarea>
+                <label class="label-id" for="message-area">Message</label>
+            </div>
+
+            <button >Envoyer <fa-icon [icon]="faPaperPlane"></fa-icon></button>
+        </form>
+    </div>
+</div>
+
+
+<!-- contact bloc end -->
+
+<!-- google map bloc start -->
+
+<google-map height="500px" width="100%" [options]="options" [center]="center">
+    <map-marker #markerElem = "mapMarker"
+        [position]="marker.position" [options]="marker.options" (mapClick)="openInfo(markerElem, marker.info)">
+    </map-marker>
+
+    <map-info-window >
+        <div [innerHTML]="infoContent"></div>
+    </map-info-window>
+</google-map>
+
+<!-- google map bloc end -->
+
+<!-- footer bloc start -->
+
+<div class="footer">
+    <span><span>Casabreizh</span>, Cuisine d'ici et d'ailleurs ©  2021, </span>
+    <span>Site web développé par <span>Samuel M</span></span>
+</div>
+
+<!-- footer bloc start -->
+
+</div>
