@@ -62,6 +62,11 @@ export class HomeComponent implements OnInit {
   infoContent = "";
 
 
+
+
+  isBurgerMenuClicked: boolean = false;
+
+
   constructor( private produitService: ProduitsService ) { }
 
   ngOnInit(): void {
@@ -143,14 +148,25 @@ export class HomeComponent implements OnInit {
   }
 
 
+  //Setting the link 
+  //Toggle screen menu when on small devices 
   setActiveClass(linkNumber: number){
     var myLinks = <NodeListOf<HTMLElement>>document.querySelectorAll("li a");
-
+    var navSmallScreen = <HTMLElement>document.querySelector('.header-right');
+    var inputstatus = <HTMLInputElement>document.querySelector('.burger input');
+      
     myLinks.forEach(element =>{
       element.classList.remove("active-link");
     })
 
     myLinks[linkNumber - 1].classList.add("active-link");
+
+    // À chaque clique sur l'input on vérifie si l'input est cochée
+    if(inputstatus.checked === true){
+      navSmallScreen.classList.toggle("toggle-nav");
+      inputstatus.checked = false;
+
+    }
   }
 
 
@@ -213,5 +229,28 @@ export class HomeComponent implements OnInit {
   openInfo(marker: MapMarker, info: string) {
     this.infoContent = info;
      this.info.open(marker);
+  }
+
+
+  //Handling click on burger menu
+  onBurgerMenu(){
+    var navSmallScreen = <HTMLElement>document.querySelector('.header-right');
+    var inputstatus = <HTMLInputElement>document.querySelector('.burger input');
+    var menuText = <NodeListOf<HTMLElement>>document.querySelectorAll("a span");
+
+    // À chaque clique sur l'input on vérifie si l'input est cochée
+    if(inputstatus.checked === true){
+      
+      navSmallScreen.classList.toggle("toggle-nav")
+
+      this.isBurgerMenuClicked = true;
+
+    }
+    else{
+      navSmallScreen.classList.toggle("toggle-nav");
+      
+    }
+
+    
   }
 }

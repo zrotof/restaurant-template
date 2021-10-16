@@ -2,10 +2,11 @@
 
     <header (scroll)="onWindowScroll()" >
 
-        <img src="../../../assets/img/casabreizh_logo.png" alt="Logo du restaurant Casabreizh">
+        <a href="#accueil">
+            <img class="logo" src="../../../assets/img/casabreizh_logo.png" alt="Logo du restaurant Casabreizh">
+        </a>
         
-        <div class="header-right">
-            <nav>
+            <nav class="header-right">
                 <ul>
                     <li><a href="#accueil" class="active-link" (click)="setActiveClass(1)">Accueil</a></li>
                     <li><a href="#a-propos" (click)="setActiveClass(2)">A Propos</a></li>
@@ -15,40 +16,44 @@
                     <li><a href="#contact" (click)="setActiveClass(6)">Contact</a></li>
                 </ul>
             </nav>
+
+        <div class="burger" (click)="onBurgerMenu()">
+            <input type="checkbox" />
+        
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     
     </header>
 
     <div class="slider" id="accueil">
 
-        <div class="mySlide fadeHeader">
+        <div class="mySlide fadeHeader slide1">
             <div class="slider-text">
                 <h1>Des Plats Exotiques</h1>
                 <p>Venez découvrir des plats typiques du Sénégal comme</p>
                 <p>le poisson Capitaine ou Baracouda grillé, le Soupoukandja (boeuf sauce gombo), le Mafé (boeuf sauce arachide), le Tiéboudjène, riz au poisson  plat national du Sénégal</p>
                 
-                <a href="#menus">La Carte</a>
+                <a href="#carte">La Carte</a>
             </div>
-            <img src="../../../assets/img/casa-slide-one.jpeg" alt="family at airport">
         </div>
 
-        <div class="mySlide fadeHeader">
+        <div class="mySlide fadeHeader slide2">
             <div class="slider-text">
                 <h1>Un Accueil Chaleureux</h1>
                 <p>Le Casa Breizh vous réserve un accueil des plus convivial dans un cadre agréable et dépaysant. Du mardi au samedi, le matin comme le soir</p>
-                <a href="#menus">La Carte</a>
+                <a href="#carte">La Carte</a>
              </div>
-            <img src="../../../assets/img/casa-slide-two.jpeg" alt="family at airport">
         </div>
 
-        <div class="mySlide fadeHeader">
+        <div class="mySlide fadeHeader slide3">
             <div class="slider-text">
                 <h1>Une Cuisine Originale</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <a href="#menus">La Carte</a>
+                <a href="#carte">La Carte</a>
             </div>
-            <img src="../../../assets/img/casa-slide-four.jpeg" alt="family at airport">
         </div>
 
 
@@ -110,7 +115,6 @@
     </div>
 
     <div id="commandez" class="a-emporter">
-        <img class="commandez-background" src="../../../assets/img/casa-slide-three.jpeg"> 
     
         <div class="commandez-title">
             <img src="../../../assets/img/deco/left-gold.png" alt="Décoration de titre gauche">
@@ -328,7 +332,6 @@
 <!-- contact bloc start -->
 
 <div class="contact-bloc">
-    <img class="contact-bg" src="../../../assets/img/contact-bg.png">
 
     <div class="contact-header">
         <img src="../../../assets/img/deco/left-gold.png" alt="Décoration de titre gauche">
