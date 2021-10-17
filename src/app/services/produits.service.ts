@@ -92,14 +92,14 @@ export class ProduitsService {
   getDesserts(){
    return this.desserts =[
       {
-        "nomProduit": "Crème brûlée à la vanille bourbon",
+        "nomProduit": "Crème brûlée à la vanille",
         "imageProduit": "../../../assets/img/desserts/casa-dessert-creme-brulee.jpeg",
         "prixProduit": "05,00 €",
         "descriptionProduit": "qsdfghjk oiuytrez sdfg fghjkl ezrtyuijosdfg fghjkl ezrtyuijo",
         "etatProduit": false
       },
       {
-        "nomProduit": "Salade-de-fruits",
+        "nomProduit": "Salade de fruits",
         "imageProduit": "../../../assets/img/desserts/casa-dessert-salade-de-fruits.jpeg",
         "prixProduit": "04,50 €",
         "descriptionProduit": "",
