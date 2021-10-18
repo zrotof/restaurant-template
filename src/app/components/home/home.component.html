@@ -171,7 +171,7 @@
                     <div class="tab-page plat">
                         <span class="title">Poissons</span>
                         <div class="produit-bloc">
-                            <div class="produit" *ngFor="let poisson of poissonsArray">
+                            <div class="produit" *ngFor="let poisson of poissonsArray; let index= index" (click)="openProduit('poisson' ,index)">
                                 <div class="produit-bloc-image-text">
                                     <img class="produit-image" src="{{poisson.imageProduit}}">
                                     <span class="produit-text" *ngIf="poisson.etatProduit == false">Épuisé</span>
@@ -415,6 +415,11 @@
     <span>Site web développé par <span>Samuel M</span></span>
 </div>
 
-<!-- footer bloc start -->
 
+<!-- footer bloc end -->
+<p>
+    <ngb-alert [dismissible]="false">
+      <strong>Warning!</strong> Better check yourself, you're not looking too good.
+    </ngb-alert>
+  </p>
 </div>

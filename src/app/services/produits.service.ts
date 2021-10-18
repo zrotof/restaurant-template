@@ -37,42 +37,49 @@ export class ProduitsService {
          "imageProduit": "../../../assets/img/poissons/casa-poisson-bar-yassa.jpeg",
          "prixProduit": "18,00 €",
          "descriptionProduit": "tilapia mariné au citron vert, ail, moutarde et oignons",
-         "etatProduit": true
+         "etatProduit": true,
+         "categProduit": "poisson"
        },
        {
          "nomProduit": "Mafé au poisson",
          "imageProduit": "../../../assets/img/poissons/casa-poisson-mafe.jpeg",
          "prixProduit": "16,00 €",
          "descriptionProduit": "Tilapia sauce d'arachide",
-         "etatProduit": true
+         "etatProduit": true,
+         "categProduit": "poisson"
+         
        },
        {
         "nomProduit": "Bar grillé sauce Yassa",
         "imageProduit": "../../../assets/img/poissons/casa-poisson-bar-yassa.jpeg",
         "prixProduit": "18,00 €",
         "descriptionProduit": "tilapia mariné au citron vert, ail, moutarde et oignons",
-        "etatProduit": false
+        "etatProduit": false,
+        "categProduit": "poisson"
       },
       {
         "nomProduit": "Mafé au poisson",
         "imageProduit": "../../../assets/img/poissons/casa-poisson-mafe.jpeg",
         "prixProduit": "18,50 €",
         "descriptionProduit": "Tilapia sauce d'arachide",
-        "etatProduit": false
+        "etatProduit": false,
+        "categProduit": "poisson"
       },
       {
         "nomProduit": "Bar grillé sauce Yassa",
         "imageProduit": "../../../assets/img/poissons/casa-poisson-bar-yassa.jpeg",
         "prixProduit": "18,00 €",
         "descriptionProduit": "tilapia mariné au citron vert, ail, moutarde et oignons",
-        "etatProduit": true
+        "etatProduit": true,
+        "categProduit": "poisson"
       },
       {
         "nomProduit": "Mafé au poisson",
         "imageProduit": "../../../assets/img/poissons/casa-poisson-mafe.jpeg",
         "prixProduit": "16,00 €",
         "descriptionProduit": "Tilapia sauce d'arachide",
-        "etatProduit": false
+        "etatProduit": false,
+        "categProduit": "poisson"
       }
      ];
    }
@@ -96,35 +103,40 @@ export class ProduitsService {
         "imageProduit": "../../../assets/img/desserts/casa-dessert-creme-brulee.jpeg",
         "prixProduit": "05,00 €",
         "descriptionProduit": "qsdfghjk oiuytrez sdfg fghjkl ezrtyuijosdfg fghjkl ezrtyuijo",
-        "etatProduit": false
+        "etatProduit": false,
+        "categProduit": "viande"
       },
       {
         "nomProduit": "Salade de fruits",
         "imageProduit": "../../../assets/img/desserts/casa-dessert-salade-de-fruits.jpeg",
         "prixProduit": "04,50 €",
         "descriptionProduit": "",
-        "etatProduit": false
+        "etatProduit": false,
+        "categProduit": "viande"
       },
       {
         "nomProduit": "Riz au lait caramel",
         "imageProduit": "../../../assets/img/desserts/casa-dessert-riz-au-lait.jpg",
         "prixProduit": "04,50 €",
         "descriptionProduit": "",
-        "etatProduit": true
+        "etatProduit": true,
+        "categProduit": "viande"
       },
       {
         "nomProduit": "Moelleux au chocolat caramel",
         "imageProduit": "../../../assets/img/desserts/casa-dessert-moelleux-chocolat-caramel.jpeg",
         "prixProduit": "05,20 €",
         "descriptionProduit": "",
-        "etatProduit": false
+        "etatProduit": false,
+        "categProduit": "viande"
       },
       {
         "nomProduit": "Café gourmand",
         "imageProduit": "../../../assets/img/desserts/casa-dessert-cafe-gourmand.jpeg",
         "prixProduit": "05,00 €",
         "descriptionProduit": "",
-        "etatProduit": true
+        "etatProduit": true,
+        "categProduit": "viande"
       }
     ];
   }

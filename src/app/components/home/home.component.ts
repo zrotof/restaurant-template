@@ -254,4 +254,15 @@ export class HomeComponent implements OnInit {
 
     
   }
+
+
+
+
+  //Handling click on product
+
+
+  openProduit(typeProduit: string, index: number){
+
+    console.log(typeProduit);
+  }
 }

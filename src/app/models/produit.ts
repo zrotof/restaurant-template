@@ -2,10 +2,9 @@ export class Produit {
 
     id?: string;
     nomProduit?: string;
-    categVoit?: string;
+    categProduit?: string;
     imageProduit?: string;
     prixProduit?: string;
     descriptionProduit?: string;
     etatProduit?: boolean;
-
 }
