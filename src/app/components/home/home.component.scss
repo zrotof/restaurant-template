@@ -399,14 +399,6 @@ $colorGreen: #046904;
         background-repeat: no-repeat;
         background-size: cover;
 
-         .commandez-background{
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
         .commandez-title{
             display: flex;
             justify-content: flex-end;
@@ -733,9 +725,11 @@ $colorGreen: #046904;
 
         .testimony-caroussel{
 
-            margin: 50px 0 60px 0;
+            margin: 0px 0 60px 0;
             display: flex;
             align-items: center;
+            justify-content: center;
+
             padding: 0 100px;
             width: 100%;
             position: relative;
@@ -762,7 +756,6 @@ $colorGreen: #046904;
                             border-radius: 5px;
                             position: relative;
                             cursor: pointer;
-                            margin: 15px 0;
                             padding: 20px;
                             width: 250px;
                             height: 250px;
@@ -778,8 +771,8 @@ $colorGreen: #046904;
                                 padding: 15px 10px;
                                 width: 100%;
                                 border-radius: 5px;
-                                margin: 20px 0 10px 0;
-                                height: 100%;
+                                margin: 10px 0 10px 0;
+                                height: 135px;
                                 overflow-y: scroll;
                                 background: rgba(182, 151, 73, 0.432);
                                 font-size: 0.9em;
@@ -789,12 +782,6 @@ $colorGreen: #046904;
                                 }
                                 
                             }
-                        }
-
-                        .testimony-element:hover{
-                            box-shadow: 0px 0px 9px 5px rgba(17,95,152,0.74);
-                            -webkit-box-shadow: 0px 0px 9px 5px rgba(17,95,152,0.74);
-                            -moz-box-shadow: 0px 0px 9px 5px rgba(17,95,152,0.74);
                         }
 
                         .testimony-element ~ .testimony-element{
@@ -1605,9 +1592,87 @@ $colorGreen: #046904;
     }
 }
 
+
+
+
+
+
+//Testimonies
+@media all and (max-width: 525px){
+
+    .testinony-bloc{
+        padding: 50px 5% !important;
+
+
+        .testimony-caroussel{
+
+            margin: 0 !important;
+            padding: 0 !important;
+
+                .testimony-caroussel-hidder{
+
+                    width: 250px !important;
+                    .testimony-caroussel-container{
+
+                        .testimony-element{
+                            padding: 10px !important;
+
+                            .testimony-element-message{
+                                padding: 10px !important;
+                                margin: 5px 0 5px 0 !important;                                
+                            }
+                        }
+                    }
+                }
+        }
+
+        .testimony-call-to-action{
+            margin-top: 40px !important;
+    }
+        
+    }
+ 
+}
+
+
+
+//home delivery 
 //menu responsive tabs
 //footer
 @media all and (max-width: 450px){
+
+
+    .a-emporter{
+        padding: 50px 0.5em !important;
+
+
+        .livreur{
+            width: 300px !important;
+            height: 140px !important;
+            margin: 40px 0 30px 0 !important;
+        }
+
+        > span {
+            font-size: 0.96em !important;
+            font-weight: 530;
+        }
+
+        .commandez-content{
+
+            .commandez-content-apps{
+
+                img{
+                    height: 65px !important;
+                    width: 70px !important;
+                    margin: 20px 10px !important;
+                }
+            }
+        }
+        
+    }
+
+
+
 
     .carte{
 
@@ -1653,4 +1718,57 @@ $colorGreen: #046904;
 
         
     }
+}
+
+
+
+
+
+//testimony
+//Testimonies
+@media all and (max-width: 400px){
+
+    .testinony-bloc{
+        padding: 50px 0.5em !important;
+
+        .testimony-call-to-action{
+                padding: 4px 15px !important;
+                font-size: 0.96em !important;
+        }
+        
+    }
+ 
+}
+
+
+
+
+//testimony
+//Testimonies
+@media all and (max-width: 370px){
+
+    .testinony-bloc{
+
+        .testimony-caroussel{
+
+
+                .testimony-prev,.testimony-next{
+                    top: 115% !important;
+                }
+
+                .testimony-prev{
+                    left: 30% !important;
+                }
+        
+                .testimony-next{
+                    right: 30% !important;
+                }
+        }
+
+        .testimony-call-to-action{
+                margin-top: 80px !important;
+        }
+        
+    }
+ 
 }
