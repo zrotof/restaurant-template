@@ -1,5 +1,5 @@
 import { Component, HostListener, OnInit, ViewChild } from '@angular/core';
-import { faChevronLeft, faChevronRight, faMapMarkerAlt, faCalendarAlt, faPhone, faEnvelope, faPaperPlane } from '@fortawesome/free-solid-svg-icons'
+import { faChevronLeft, faChevronRight, faMapMarkerAlt, faCalendarAlt, faPhone, faEnvelope, faPaperPlane, faInfoCircle } from '@fortawesome/free-solid-svg-icons'
 
 import { ProduitsService } from '../../services/produits.service';
 import { Produit } from '../../models/produit';
@@ -28,6 +28,7 @@ export class HomeComponent implements OnInit {
   faPhone = faPhone ;
   faEnvelope = faEnvelope;
   faPaperPlane = faPaperPlane;
+  faInfoCircle = faInfoCircle;
 
     //variables for home header slide
     counter:number = 1;

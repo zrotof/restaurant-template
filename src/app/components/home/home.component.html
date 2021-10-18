@@ -32,7 +32,7 @@
         <div class="mySlide fadeHeader slide1">
             <div class="slider-text">
                 <h1>Des Plats Exotiques</h1>
-                <p>Venez découvrir des plats typiques du Sénégal comme</p>
+                <p>Venez découvrir des plats typiques du Sénégal comme :</p>
                 <p>le poisson Capitaine ou Baracouda grillé, le Soupoukandja (boeuf sauce gombo), le Mafé (boeuf sauce arachide), le Tiéboudjène, riz au poisson  plat national du Sénégal</p>
                 
                 <a href="#carte">La Carte</a>
@@ -109,6 +109,7 @@
             <div class="about-content-media">
                 <img src="../../../assets/img/casa-about.png" alt="image du chef Atho">
                 <span></span>
+                <span> Chef ATHO</span>
             </div>
         </div>
 
@@ -179,7 +180,7 @@
                                     <span class="produit-info-title">{{poisson.nomProduit}}</span>
                                     <span class="produit-info-description">{{poisson.descriptionProduit}}</span>
                                     
-                                    <span class="produit-info-price">{{poisson.prixProduit}}</span>
+                                    <span class="produit-info-price"><fa-icon [icon]="faInfoCircle"></fa-icon> {{poisson.prixProduit}}</span>
                                     
                                 </div>
                             </div>
@@ -194,7 +195,7 @@
                                 </div>                                <div class="produit-info">
                                     <span class="produit-info-title">{{dessert.nomProduit}}</span>
                                     <span class="produit-info-description">{{dessert.descriptionProduit}}</span>
-                                    <span class="produit-info-price">{{dessert.prixProduit}}</span>
+                                    <span class="produit-info-price"><fa-icon [icon]="faInfoCircle"></fa-icon> {{dessert.prixProduit}}</span>
                                 </div>
                             </div>
                         </div>
@@ -219,7 +220,7 @@
                                 <div class="produit-info">
                                     <span class="produit-info-title">{{poisson.nomProduit}}</span>
                                     <span class="produit-info-description">{{poisson.descriptionProduit}}</span>
-                                    <span class="produit-info-price">{{poisson.prixProduit}}</span>
+                                    <span class="produit-info-price"> <fa-icon [icon]="faInfoCircle"></fa-icon> {{poisson.prixProduit}}</span>
                                     
                                 </div>
                             </div>
@@ -236,7 +237,7 @@
                                     <div class="produit-info">
                                         <span class="produit-info-title">{{dessert.nomProduit}}</span>
                                         <span class="produit-info-description">{{dessert.descriptionProduit}}</span>
-                                        <span class="produit-info-price">{{dessert.prixProduit}}</span>
+                                        <span class="produit-info-price"> <fa-icon [icon]="faInfoCircle"></fa-icon> {{dessert.prixProduit}}</span>
                                         
                                     </div>
                             </div>
@@ -265,7 +266,7 @@
                                 <div class="produit-info">
                                     <span class="produit-info-title">{{dessert.nomProduit}}</span>
                                     <span class="produit-info-description">{{dessert.descriptionProduit}}</span>
-                                    <span class="produit-info-price">{{dessert.prixProduit}}</span>
+                                    <span class="produit-info-price"> <fa-icon [icon]="faInfoCircle"></fa-icon> {{dessert.prixProduit}}</span>
                                     
                                 </div>
                             </div>
@@ -409,7 +410,7 @@
 <!-- footer bloc start -->
 
 <div class="footer">
-    <span><span>Casabreizh</span>, Cuisine d'ici et d'ailleurs ©  2021, </span>
+    <span><span>Casabreizh</span>, Cuisine d'ici et d'ailleurs © 2021 </span>
     <span>Site web développé par <span>Samuel M</span></span>
 </div>
 
