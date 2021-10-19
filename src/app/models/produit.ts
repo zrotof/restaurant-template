@@ -7,4 +7,5 @@ export class Produit {
     prixProduit?: string;
     descriptionProduit?: string;
     etatProduit?: boolean;
+    ingredientsProduit?:string[]
 }

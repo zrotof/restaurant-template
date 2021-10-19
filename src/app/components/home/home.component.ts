@@ -7,6 +7,10 @@ import { Temoignage } from '../../models/temoignage';
 
 import { GoogleMap, MapInfoWindow, MapMarker } from "@angular/google-maps";
 
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+
+import { ProduitComponent } from '../produit/produit.component';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -68,7 +72,7 @@ export class HomeComponent implements OnInit {
   isBurgerMenuClicked: boolean = false;
 
 
-  constructor( private produitService: ProduitsService ) { }
+  constructor( private produitService: ProduitsService, private modalService: NgbModal ) { }
 
   ngOnInit(): void {
     this.slideFunction(this.counter);
@@ -263,6 +267,11 @@ export class HomeComponent implements OnInit {
 
   openProduit(typeProduit: string, index: number){
 
-    console.log(typeProduit);
+    const produitRef = this.modalService.open(ProduitComponent);
+    
+    if(typeProduit == "poisson"){
+      produitRef.componentInstance.currentProduit = this.poissonsArray[index];
+    }
   }
 }
+

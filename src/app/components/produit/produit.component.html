@@ -1,0 +1,20 @@
+
+  <div class="modal-body">
+    <img src="{{currentProduit.imageProduit}}">
+    <span>{{currentProduit.nomProduit}}</span>
+    <p>{{currentProduit.descriptionProduit}}</p>
+    <div class="ingredients-bloc">
+        <span>Ingredients</span>
+        <div class="ingredients">
+            <div class="ingredient" *ngFor="let ingredient of currentProduit.ingredientsProduit; let index = index">
+                <span *ngIf="index == 0">{{ingredient}}</span>
+                <span *ngIf="index > 0">, {{ingredient}}</span>
+            </div>
+        </div>
+    </div>
+    <span> {{currentProduit.prixProduit}} </span>
+  </div>
+  <div class="modal-footer">
+        
+    <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Fermer</button>
+  </div>

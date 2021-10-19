@@ -36,9 +36,10 @@ export class ProduitsService {
          "nomProduit": "Bar grillé sauce Yassa",
          "imageProduit": "../../../assets/img/poissons/casa-poisson-bar-yassa.jpeg",
          "prixProduit": "18,00 €",
-         "descriptionProduit": "tilapia mariné au citron vert, ail, moutarde et oignons",
+         "descriptionProduit": "tilapia mariné au citron vert tilapia mariné au citron vert, tilapia mariné au citron vert, ail, moutarde et oignons",
          "etatProduit": true,
-         "categProduit": "poisson"
+         "categProduit": "poisson",
+         "ingredientsProduit": ["bar","oigons","piment","arachide","ail","huile végétale","crevettes","huile végétale","crevettes"]
        },
        {
          "nomProduit": "Mafé au poisson",
@@ -46,7 +47,8 @@ export class ProduitsService {
          "prixProduit": "16,00 €",
          "descriptionProduit": "Tilapia sauce d'arachide",
          "etatProduit": true,
-         "categProduit": "poisson"
+         "categProduit": "poisson",
+         "ingredientsProduit": ["bar","oigons","piment","arachide","ail","huile végétale","crevettes"]
          
        },
        {
@@ -55,7 +57,8 @@ export class ProduitsService {
         "prixProduit": "18,00 €",
         "descriptionProduit": "tilapia mariné au citron vert, ail, moutarde et oignons",
         "etatProduit": false,
-        "categProduit": "poisson"
+        "categProduit": "poisson",
+        "ingredientsProduit": ["bar","oigons","piment","arachide","ail","huile végétale","crevettes"]
       },
       {
         "nomProduit": "Mafé au poisson",
@@ -63,7 +66,8 @@ export class ProduitsService {
         "prixProduit": "18,50 €",
         "descriptionProduit": "Tilapia sauce d'arachide",
         "etatProduit": false,
-        "categProduit": "poisson"
+        "categProduit": "poisson",
+        "ingredientsProduit": ["bar","oigons","piment","arachide","ail","huile végétale","crevettes"]
       },
       {
         "nomProduit": "Bar grillé sauce Yassa",
@@ -71,7 +75,8 @@ export class ProduitsService {
         "prixProduit": "18,00 €",
         "descriptionProduit": "tilapia mariné au citron vert, ail, moutarde et oignons",
         "etatProduit": true,
-        "categProduit": "poisson"
+        "categProduit": "poisson",
+        "ingredientsProduit": ["bar","oigons","piment","arachide","ail","huile végétale","crevettes"]
       },
       {
         "nomProduit": "Mafé au poisson",
@@ -79,7 +84,8 @@ export class ProduitsService {
         "prixProduit": "16,00 €",
         "descriptionProduit": "Tilapia sauce d'arachide",
         "etatProduit": false,
-        "categProduit": "poisson"
+        "categProduit": "poisson",
+        "ingredientsProduit": ["bar","oigons","piment","arachide","ail","huile végétale","crevettes"]
       }
      ];
    }
